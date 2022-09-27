@@ -35,7 +35,7 @@ else:
     existing_resolutions = []
 
 chrome_options = Options()
-chrome_options.add_argument("--headless") # comment out if you want to see the scraper in action
+# chrome_options.add_argument("--headless") # un-comment out if you want to see the scraper in action
 service = Service(ChromeDriverManager().install())
 print("Opening browser...\n")
 chrome_browser = webdriver.Chrome(options=chrome_options,service=service)
